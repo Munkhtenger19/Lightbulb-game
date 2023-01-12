@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Bulb Placement Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="title">Light bulb placement game💡</div>
+    <div id="img" class="parent"><img src="resource/KingPhoto.png" alt="King photo" width="400" height="350">
+        <div id="description">
+            <p> Once upon a time, King Unnamed of Nowhereland was both smiling
+            and crying at the same time. He was smiling because his enormous
+            brand-new palace with many spacious rooms and corridors has just
+            been finished. He is also crying as these rooms need to be illuminated
+            and kept warm, but the ongoing increase of utility costs affect him
+            as well. So now it's time to think about the placement of the palace's
+            light bulbs. We need to place them so that everything is properly lit,
+            but we cannot install any unnecessary bulbs.
+            </p>
+            <p>
+                Therefore, please help him to place the light bulbs correctly.
+                King will measure your time and please provide him a player name
+                of you as he will write down your information.
+            </p>
+            <p style="font-size: 30px">
+                Happy light saving!
+            </p>
+        </div>
+
+    </div>
+
+    <table>
+    </table>
+
+    <div id="result"></div>
+    <div id="score">
+      <p id="typeName">Enter username: <input id="userInput" required type="text" ></p>
+      <label id="label">Choose difficulty of the game:
+        <select id="dropdown">
+          <option value="invalid" selected>Select one...</option>
+          <option value="easy">Easy</option>
+          <option value="advanced">Advanced</option>
+          <option value="extreme">Extreme</option>
+        </select>
+      </label>
+        <div><button class="b1" id="submit" type="button">Begin the game</button></div>
+        <div id="divReload"><button id="reload" type="button">Reload the game</button></div>
+        <div id="AppearTable"></div>
+      <div id="player_div">Player: <span id="playerName"></span></div>
+      <div id="time_div">Elapsed time: <span id="hour">00</span>:<span id="min">00</span>:<span id="sec">00</span></div>
+    </div>
+</body>
+</html>
+<script src="script.js"></script>
